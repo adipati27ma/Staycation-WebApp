@@ -20,8 +20,8 @@ export default function Button(props) {
       <span className={className.join(' ')} style={props.style}>
         {props.isLoading ? (
           <>
-            <span class="spinner-border spinner-border-sm mx-5"></span>
-            <span class="sr-only">Loading...</span>
+            <span className="spinner-border spinner-border-sm mx-5"></span>
+            <span className="sr-only">Loading...</span>
           </>
         ) : (
           props.children
@@ -44,14 +44,16 @@ export default function Button(props) {
         </a>
       );
     } else {
-      <Link
-        to={props.href}
-        className={className.join(' ')}
-        style={props.style}
-        onClick={onClick}
-      >
-        {props.children}
-      </Link>;
+      return (
+        <Link
+          to={props.href}
+          className={className.join(' ')}
+          style={props.style}
+          onClick={onClick}
+        >
+          {props.children}
+        </Link>
+      );
     }
   }
 
@@ -68,7 +70,7 @@ export default function Button(props) {
 }
 
 Button.propTypes = {
-  type: PropTypes.oneOf(['button', 'link']),
+  type: PropTypes.oneOf(['button', 'link']), // oneOf === "enum" di bahasa lain
   onClick: PropTypes.func,
   target: PropTypes.string,
   href: PropTypes.string,
