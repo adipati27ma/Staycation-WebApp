@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 
-import Button from 'elements/Button';
+import landingPage from 'json/landingPage.json';
 import Header from 'parts/Header';
+import Hero from 'parts/Hero';
 
 export default function LandingPage(props) {
   return (
     <>
       <Header {...props}></Header>
+      <Hero data={landingPage.hero} />
     </>
   );
 }
