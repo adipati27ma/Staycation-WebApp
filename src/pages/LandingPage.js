@@ -6,11 +6,13 @@ import Hero from 'parts/Hero';
 import MostPicked from 'parts/MostPicked';
 
 export default function LandingPage(props) {
+  const refMostPicked = React.createRef();
+
   return (
     <>
       <Header {...props}></Header>
-      <Hero data={landingPage.hero} />
-      <MostPicked data={landingPage.mostPicked} />
+      <Hero refMostPicked={refMostPicked} data={landingPage.hero} />
+      <MostPicked refMostPicked={refMostPicked} data={landingPage.mostPicked} />
     </>
   );
 }

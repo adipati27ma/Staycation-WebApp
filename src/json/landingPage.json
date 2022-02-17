@@ -4,8 +4,7 @@
     "treasures": 882,
     "cities": 1492
   },
-  "mostPicked": [
-    {
+  "mostPicked": [{
       "_id": "asd1293uasdads1",
       "name": "Jung Hook Sie",
       "type": "Apartment",
@@ -56,12 +55,10 @@
       "unit": "night"
     }
   ],
-  "categories": [
-    {
+  "categories": [{
       "_id": "asd1293uasdads1",
       "name": "House with beauty backyard",
-      "items": [
-        {
+      "items": [{
           "_id": "asd1293uasdads1",
           "name": "PSW Antasari",
           "imageUrl": "/images/image-category-1.jpg",
@@ -98,8 +95,7 @@
     {
       "_id": "asd1293uasdads1",
       "name": "Hotels with large living room",
-      "items": [
-        {
+      "items": [{
           "_id": "asd1293uasdads1",
           "name": "PSW Antasari",
           "imageUrl": "/images/image-category-5.jpg",
@@ -136,8 +132,7 @@
     {
       "_id": "asd1293uasdads1",
       "name": "Apartments with kitchen set",
-      "items": [
-        {
+      "items": [{
           "_id": "asd1293uasdads1",
           "name": "PSW Antasari",
           "imageUrl": "/images/image-category-9.jpg",
