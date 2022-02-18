@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import landingPage from 'json/landingPage.json';
 import Header from 'parts/Header';
@@ -16,18 +16,7 @@ export default function LandingPage(props) {
       <Hero refMostPicked={refMostPicked} data={landingPage.hero} />
       <MostPicked refMostPicked={refMostPicked} data={landingPage.mostPicked} />
       <Categories data={landingPage.categories} />
-      <Testimoni />
+      <Testimoni data={landingPage.testimonial} />
     </>
   );
 }
-
-// --Class Component si Nara--
-// export default class LandingPage extends Component {
-//   render() {
-//     return (
-//       <>
-//         <Header {...this.props}></Header>
-//       </>
-//     );
-//   }
-// }
