@@ -111,6 +111,9 @@ section {
   height: 100%;
 }
 
+// --End helper image--
+
+// --Card--
 .card {
   height: 100%;
 
@@ -127,7 +130,7 @@ section {
     border-radius: 0 15px;
 
     span {
-      font-weight: 300; // light
+      font-weight: 300; // === light
     }
   }
 
@@ -216,8 +219,50 @@ section {
   }
 }
 
+// --End of card--
+
+//  Testimonial
 .testimonial-hero,
 .testimonial-hero img {
   width: 365px;
   height: 500px;
 }
+
+// --End of testimonial--
+
+// --Footer--
+footer {
+  border-top: 1px solid $gray-200;
+  padding-top: 50px;
+
+  .brand-tagline {
+    margin-top: 8px;
+    color: $gray-500;
+    font-weight: 300;
+  }
+
+  .list-group-item {
+    padding: 0.3125rem 0;
+    border: 0;
+
+    a,
+    span {
+      color: $gray-500;
+      font-weight: 300;
+    }
+
+    a {
+      @include hover-focus {
+        color: $gray-800;
+      }
+    }
+  }
+
+  .copyright {
+    margin: 50px 0;
+    font-weight: 300;
+    color: $gray-500;
+  }
+}
+
+// --End of footer--
