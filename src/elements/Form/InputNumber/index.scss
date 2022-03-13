@@ -15,7 +15,7 @@
       height: 45px;
       display: flex;
       justify-content: center;
-      user-select: none;
+      user-select: none; // agar tidak bisa di-block (klik-kiri tahan)
 
       &.minus {
         background-color: $red;

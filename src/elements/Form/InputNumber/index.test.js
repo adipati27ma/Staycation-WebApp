@@ -30,12 +30,12 @@ test('Should able to change value', () => {
   const { input } = setupElement();
 
   fireEvent.change(input, { target: { value: 23 } });
-  expect(input.value).toBe('23');
+  expect(input.value.trim()).toBe('23');
 });
 
 test('Should not be able to change when reach max value', () => {
   const { input } = setupElement();
 
   fireEvent.change(input, { target: { value: 33 } });
-  expect(input.value).toBe('');
+  expect(input.value.trim()).toBe('');
 });

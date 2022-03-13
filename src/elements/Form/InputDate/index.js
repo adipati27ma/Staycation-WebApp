@@ -8,7 +8,7 @@ import 'react-date-range/dist/styles.css'; // main css file
 import 'react-date-range/dist/theme/default.css'; // theme css file
 
 import formatDate from 'utils/formatDate';
-import iconCalendar from 'assets/images/icons/icon-calendar.svg';
+import iconCalendar from 'assets/images/icons/ic_calendar.svg';
 
 export default function InputDate(props) {
   const { value, placeholder, name } = props;
@@ -59,6 +59,7 @@ export default function InputDate(props) {
           </span>
         </div>
         <input
+          name={name}
           readOnly
           type="text"
           className="form-control"

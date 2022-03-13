@@ -12,7 +12,7 @@ export default function InputNumber(props) {
   const _onChange = (e) => {
     let value = String(e.target.value);
     if (prefix) value = value.replace(prefix);
-    if (suffix) value = value.replace(suffix);
+    if (suffix) value = value.replace(suffix).trim();
 
     const patternNumeric = new RegExp('[0-9]*');
     const isNumeric = patternNumeric.test(value);
